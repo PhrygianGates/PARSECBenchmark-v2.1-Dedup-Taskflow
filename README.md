@@ -1,3 +1,4 @@
+## Instructions
 To run the benchmark, you can follow the instructions below
 1. modify `PARSECBenchmark-v2.1-Dedup-Taskflow/pkgs/kernels/dedup/src/Makefile`
     + you should change the taskflow include path in line 31
