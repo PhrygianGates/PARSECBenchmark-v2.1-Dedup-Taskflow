@@ -1,0 +1,1 @@
+source ${PARSECDIR}/pkgs/libs/ssl/parsec/gcc.bldconf

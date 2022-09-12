@@ -1,0 +1,9 @@
+man/
+log/
+*.swp
+bin/tbbtest.cpp
+
+pkgs/*/*/inputs/
+pkgs/*/*/inst/
+pkgs/*/*/obj/
+pkgs/*/*/run/
