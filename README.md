@@ -1,5 +1,6 @@
 ## Instructions
-To run the benchmark, you can follow the instructions below
+To run the benchmark, you can follow the instructions below.
+You may need to download download the complete version from this link, which contains input dataset.
 1. modify `PARSECBenchmark-v2.1-Dedup-Taskflow/pkgs/kernels/dedup/src/Makefile`
     + you should change the taskflow include path in line 31
 2. load environment variables
@@ -10,7 +11,6 @@ To run the benchmark, you can follow the instructions below
     + `-c` means the version, available ones are `gcc-taskflow`, gcc-tbb`, `gcc-pthreads`, `gcc`
     + the official version is `gcc-pthreads` and `gcc`, we add `gcc-taskflow` and gcc-tbb`
 4. run taskflow version dedup
-    + you may need to download download the complete version from this link, which contains input dataset
     + `parsecmgmt -a run -p dedup -c gcc-taskflow -i simlarge -n 8`
     + `-c` means which version you want to run(remember to build first)
     + `-i` means which dataset you want to run
