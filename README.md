@@ -1,6 +1,6 @@
 ## Instructions
 To run the benchmark, you can follow the instructions below.
-You may need to download download the complete version from this link, which contains input dataset.
+You may need to download download the complete version from [this link](https://cloud.tsinghua.edu.cn/f/cddb6048b38b406fbc5b/), which contains input dataset.
 1. modify `PARSECBenchmark-v2.1-Dedup-Taskflow/pkgs/kernels/dedup/src/Makefile`
     + you should change the taskflow include path in line 31
 2. load environment variables
