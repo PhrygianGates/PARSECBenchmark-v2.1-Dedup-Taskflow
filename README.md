@@ -8,7 +8,7 @@ You may need to download download the complete version from [this link](https://
     + `source env.sh`
 3. build taskflow version dedup
     + `parsecmgmt -a build -p dedup -c gcc-taskflow`
-    + `-c` means the version, available ones are `gcc-taskflow`, gcc-tbb`, `gcc-pthreads`, `gcc`
+    + `-c` means the version, available ones are `gcc-taskflow`, `gcc-tbb`, `gcc-pthreads`, `gcc`
     + the official version is `gcc-pthreads` and `gcc`, we add `gcc-taskflow` and gcc-tbb`
 4. run taskflow version dedup
     + `parsecmgmt -a run -p dedup -c gcc-taskflow -i simlarge -n 8`
