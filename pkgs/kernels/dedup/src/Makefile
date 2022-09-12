@@ -21,14 +21,14 @@ ifdef version
   endif
   ifeq "$(version)" "tbb"
     CFLAGS += -DPTHREADS -DTBB
-    CXXFLAGS += -DPTHREADS -DTBB -I/home/zhicheng/download/parsec-2.1/pkgs/libs/ssl/inst/amd64-linux.gcc-tbb/include -I/home/zhicheng/download/parsec-2.1/pkgs/libs/zlib/inst/amd64-linux.gcc-tbb/include
+    CXXFLAGS += -DPTHREADS -DTBB -I${PARSECDIR}/pkgs/libs/ssl/inst/amd64-linux.gcc-tbb/include -I${PARSECDIR}/pkgs/libs/zlib/inst/amd64-linux.gcc-tbb/include
     COMPILER=$(CXX)
     COMPILER_FLAGS=$(CXXFLAGS)
     DEDUP_OBJ += encoder-tbb.o
   endif
   ifeq "$(version)" "taskflow"
     CFLAGS += -DPTHREADS
-    CXXFLAGS += -DPTHREADS -I/home/zhicheng/download/parsec-2.1/pkgs/libs/ssl/inst/amd64-linux.gcc-taskflow/include -I/home/zhicheng/download/parsec-2.1/pkgs/libs/zlib/inst/amd64-linux.gcc-taskflow/include -I/home/zhicheng/taskflow/taskflow/algorithm/ 
+    CXXFLAGS += -DPTHREADS -I${PARSECDIR}/pkgs/libs/ssl/inst/amd64-linux.gcc-taskflow/include -I${PARSECDIR}/pkgs/libs/zlib/inst/amd64-linux.gcc-taskflow/include -I/home/zhicheng/taskflow/taskflow/algorithm/ 
     CXXFLAGS += -std=c++17 -fexceptions
     COMPILER=$(CXX)
     COMPILER_FLAGS=$(CXXFLAGS)
